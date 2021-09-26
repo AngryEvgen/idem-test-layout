@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+    -ms-display: grid;
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+}
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+.header {
+    height: 90px;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    line-height: 20px;
+}
+
+.element:not(.element-10, .element-1) {
+    display: flex;
+    align-items: flex-end;
+}
+
+.element:not(.element-10, .element-1) > p {
+    margin: 0 0 15px 15px;
+}
+
+.section-1 {
+    padding: 10px 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(1fr, auto));
+    grid-gap: 10px;
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-rows: repeat(2, minmax(1fr, auto));
+    -ms-grid-gap: 10px;
+}
+
+.section-1 > .element{
+    background-color: #A2A9B7;
+    aspect-ratio: 1;
+}
+
+.element-1 {
+    padding: 30px 46px 53px 25px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    -ms-grid-column: 1 / span 2;
+    -ms-grid-row: 1 / span 2;
+    text-align: center;
+    font-size: 18.1121px;
+    line-height: 26px;
+    color: #FFF;
+}
+
+.element-2,
+.element-3 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.section-2 {
+    padding: 10px 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(155px, auto));
+    grid-gap: 10px;
+    -ms-display: grid;
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-rows: repeat(2, minmax(155px, auto));
+    -ms-grid-gap: 10px;
+}
+
+.section-2 > .element {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.element-4,
+.element-5,
+.element-7 {
+    background-color: #E8EBED;
+}
+
+.element-7 {
+    grid-column: 1 / span 2;
+    -ms-grid-column: 1 / span 2;
+}
+
+.element-6 {
+    background-color: #90BCE8;
+}
+
+.element-8 {
+    background-color: #FEBF26;
+}
+
+.section-3 {
+    padding: 10px 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(1fr, auto));
+    grid-gap: 10px;
+    -ms-display: grid;
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-rows: repeat(2, minmax(1fr, auto));
+    -ms-grid-gap: 10px;
+}
+
+.section-3 > .element {
+    background-color: #E3EBD3;
+    aspect-ratio: 1;
+}
+
+.element-10 {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+    -ms-grid-column: 2 / span 3;
+    -ms-grid-row: 1 / span 2;
+    padding: 15px 15px 0 15px;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.information:nth-child(n) {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.information:first-child {
+    margin-top: 15px;
+}
+
+.information:nth-child(n+2) {
+    margin-top: 30px;
+}
+
+.information:nth-child(2) div:last-child {
+    text-align: right;
+}
+
+
+.information div:nth-child(2) {
+    flex: 1 0;
+    border-bottom: 2px dotted #000;
+}
+
+
+.element-11 {
+    background: url(../img/ship.png) no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+.element-11 > p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.section-4 {
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(155px, auto));
+    grid-gap: 10px;
+    -ms-display: grid;
+    -ms-grid-template-columns: repeat(3, 1fr);
+    -ms-grid-template-rows: repeat(2, minmax(155px, auto));
+    -ms-grid-gap: 10px;
+}
+
+.element:nth-child(n) {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.element-13 {
+    grid-column: 2 / span 2;
+    -ms-grid-column: 2 / span 2;
+}
+
+.element-12,
+.element-13,
+.element-15 {
+    background-color: #FFAA87;
+}
+
+.element-14 {
+    background-color: #F55E62;
+}
+
+.element-16 {
+    background-color: #C7ABD4;
+}
+
+.footer {
+    height: 90px;
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .section-3 {
+        display: none;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-1,
+    .section-2,
+    .section-4 {
+        padding: 10px 0 0 0 ;
+    }
+
+    .section-2 {
+        order: 1;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, minmax(155px, auto));
+        -ms-grid-template-columns: repeat(2, 1fr);
+        -ms-grid-template-rows: repeat(3, minmax(155px, auto));
+    }
+
+    .section-1 {
+        order: 2;
+    }
+
+    .section-4 {
+        order: 3;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, minmax(155px, auto));
+        -ms-grid-template-columns: repeat(2, 1fr);
+        -ms-grid-template-rows: repeat(3, minmax(155px, auto));
+        padding-bottom: 10px;
+    }
+
+    .element-4 {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        -ms-grid-column: 1 / span 1;
+        -ms-grid-row: 1 / span 1;
+    }
+
+    .element-7 {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+        -ms-grid-column: 1 / span 2;
+        -ms-grid-row: 2 / span 1;
+    }
+
+    .element-1 {
+        padding: 20px 20px 3px 10px;
+        overflow: scroll;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        -ms-grid-column: 1 / span 2;
+        -ms-grid-row: 1 / span 2;
+        min-height: 210px;
+    }
+
+    .element-12 {
+        grid-row: 3 / 4;
+        -ms-grid-row: 3 / 4;
+    }
+
+    .element-13 {
+        grid-column: 1 / span 2;
+        -ms-grid-column: 1 / span 2;
+    }
+
+    .element-14 {
+        grid-column: 2 / 3;
+        -ms-grid-column: 2 / 3;
+    }
+
+    .element-15 {
+        grid-row: 2 / 3;
+        -ms-grid-row: 2 / 3;
+    }
+
+    .element-16 {
+        grid-column: 2 / 3;
+        -ms-grid-column: 2 / 3;
+    }
+}
